@@ -11,14 +11,7 @@ const HeroSection: FunctionComponent<HeroSectionProps> = ({ id }) => {
   const { t } = useTranslation("landing");
 
   return (
-    <Stack
-      id={id}
-      alignItems="center"
-      py={10}
-      sx={{
-        backdropFilter: "blur(5px)",
-      }}
-    >
+    <Stack id={id} alignItems="center" py={20}>
       <Stack textAlign="center" maxWidth="800px" alignItems="center">
         <MiniHeader text={t(`hero.mini-header`)} />
 

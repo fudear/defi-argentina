@@ -38,7 +38,7 @@ const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
 export default Layout;
 
 const Main = styled("main")`
-  margin-top: calc(100vh / 2 - 12rem);
+  margin-top: 5rem;
   height: 100vh;
   max-height: 1080px;
 `;

@@ -13,6 +13,7 @@ import Image from "next/image";
 import { BLUE, GRAY } from "../../styles/color.style";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import useIsMobile from "../../hooks/useIsMobile";
 
 interface NavbarProps {}
 
@@ -27,6 +28,8 @@ const Socials = () => {
 };
 
 const Navbar: FunctionComponent<NavbarProps> = () => {
+  const isMobile = useIsMobile();
+
   return (
     <AppBar
       elevation={0}
@@ -47,7 +50,11 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
           />
         </Stack>
 
-        <Stack direction="row" flex="1" justifyContent="center">
+        <Stack
+          direction="row"
+          flex="1"
+          justifyContent={isMobile ? "flex-end" : "center"}
+        >
           <IconButton>
             <TwitterIcon color="primary" />
           </IconButton>
@@ -59,19 +66,21 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
           </IconButton>
         </Stack>
 
-        <Stack
-          direction="row"
-          gap={3}
-          flex="1"
-          justifyContent="flex-end"
-          alignItems="center"
-        >
-          <Typography>Campañas</Typography>
-          <Typography>Equipo</Typography>
-          <Typography>Contactar</Typography>
+        {!isMobile && (
+          <Stack
+            direction="row"
+            gap={3}
+            flex="1"
+            justifyContent="flex-end"
+            alignItems="center"
+          >
+            <Typography>Campañas</Typography>
+            <Typography>Equipo</Typography>
+            <Typography>Contactar</Typography>
 
-          <Button variant="contained">Doná hoy</Button>
-        </Stack>
+            <Button variant="contained">Doná hoy</Button>
+          </Stack>
+        )}
       </Toolbar>
     </AppBar>
   );
