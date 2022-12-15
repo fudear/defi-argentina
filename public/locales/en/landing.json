@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "mini-header": "HELP US HELP",
+    "title": "Donate with crypto. Fast, simple & transparent.",
+    "description": "Thanks to your collaboration we can help many children.",
+    "primary": "Donate now",
+    "secondary": "What do we do?"
+  },
+  "about": {
+    "mini-header": "¿QUÉ HACEMOS?",
+    "title": "Ayudamos a comedores infantiles de Argentina gracias a tus donaciones en cripto.",
+    "item-1": {
+      "title": "Misión",
+      "description": "Misión description"
+    },
+    "item-2": {
+      "title": "Visión",
+      "description": "Visión description"
+    },
+    "item-3": {
+      "title": "Transparencia",
+      "description": "Transparencia description"
+    },
+    "item-4": {
+      "title": "Sin fronteras",
+      "description": "Sin fronteras description"
+    }
+  },
+  "campaigns": {
+    "title": "Últimas campañas",
+    "description": "Gracias a tu ayuda podemos seguir cumpliendo nuestra misión.",
+    "item-1": {
+      "title": "Campaña 1",
+      "description": "Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque ornare pharetra faucibs arcu. Mauris blandit egestas nibh."
+    },
+    "item-2": {
+      "title": "Campaña 2",
+      "description": "Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque ornare pharetra faucibs arcu. Mauris blandit egestas nibh."
+    },
+    "item-3": {
+      "title": "Campaña 3",
+      "description": "Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque ornare pharetra faucibs arcu. Mauris blandit egestas nibh."
+    }
+  },
+  "donate": {
+    "mini-header": "Es hora de donar",
+    "title": "Selecciona una de las opciones y seguí las instrucciones"
+  },
+  "team": {
+    "title": "Nuestro equipo",
+    "description": "Gracias al trabajo de todos ellos la Fundación puede cumplir sus objetivos."
+  },
+  "partners": {
+    "title": "Colaboran con nosotros"
+  }
+}

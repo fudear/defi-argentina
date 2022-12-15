@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "mini-header": "AYUDANOS A AYUDAR",
+    "title": "Doná en cripto. Rápido, fácil y transparente.",
+    "description": "Gracias a tu colaboración podemos ayudar a que más chicos puedan comer dignamente y despierten su potencial.",
+    "primary": "Doná hoy",
+    "secondary": "¿Qué hacemos?"
+  },
+  "about": {
+    "mini-header": "¿QUÉ HACEMOS?",
+    "title": "Ayudamos a comedores infantiles de Argentina gracias a tus donaciones en cripto.",
+    "item-1": {
+      "title": "Misión",
+      "description": "Cubrir las necesidades de niños y jóvenes de Argentina y Latinoamérica que se encuentren en situación de vulnerabilidad socioeconómica."
+    },
+    "item-2": {
+      "title": "Visión",
+      "description": "Hacer de las finanzas descentralizadas una manera rápida, fácil y transparente para donar y ayudar a quienes más lo necesitan."
+    },
+    "item-3": {
+      "title": "Transparencia",
+      "description": "La tecnología blockchain nos permite que puedas verificar la trazabilidad de tus donaciones."
+    },
+    "item-4": {
+      "title": "Sin fronteras",
+      "description": "Dona desde cualquier parte del mundo. Fácil y en pocos segundos."
+    }
+  },
+  "campaigns": {
+    "title": "Últimas campañas",
+    "description": "Gracias a tu ayuda podemos seguir cumpliendo nuestra misión.",
+    "item-1": {
+      "title": "Campaña 1",
+      "description": "Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque ornare pharetra faucibs arcu. Mauris blandit egestas nibh."
+    },
+    "item-2": {
+      "title": "Campaña 2",
+      "description": "Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque ornare pharetra faucibs arcu. Mauris blandit egestas nibh."
+    },
+    "item-3": {
+      "title": "Campaña 3",
+      "description": "Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque ornare pharetra faucibs arcu. Mauris blandit egestas nibh."
+    }
+  },
+  "donate": {
+    "mini-header": "Es hora de donar",
+    "title": "Selecciona una de las opciones y seguí las instrucciones"
+  },
+  "team": {
+    "title": "Nuestro equipo",
+    "description": "Gracias al trabajo de todos ellos la Fundación puede cumplir sus objetivos."
+  },
+  "partners": {
+    "title": "Colaboran con nosotros"
+  }
+}
