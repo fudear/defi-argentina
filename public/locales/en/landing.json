@@ -4,10 +4,10 @@
     "title": "Donate with crypto. Fast, simple & transparent.",
     "description": "Thanks to your collaboration we can help many children.",
     "primary": "Donate now",
-    "secondary": "What do we do?"
+    "secondary": "About us"
   },
   "about": {
-    "mini-header": "¿QUÉ HACEMOS?",
+    "mini-header": "ABOUT FUDEAR",
     "title": "Ayudamos a comedores infantiles de Argentina gracias a tus donaciones en cripto.",
     "item-1": {
       "title": "Misión",
@@ -43,14 +43,16 @@
     }
   },
   "donate": {
-    "mini-header": "Es hora de donar",
-    "title": "Selecciona una de las opciones y seguí las instrucciones"
+    "mini-header": "Time to donate",
+    "title": "Select a chain and follow the instructions",
+    "instruction": "Use this address to donate from your wallet",
+    "copy": "Copy"
   },
   "team": {
-    "title": "Nuestro equipo",
-    "description": "Gracias al trabajo de todos ellos la Fundación puede cumplir sus objetivos."
+    "title": "Our team",
+    "description": "Thanks to them we can achieve our goals."
   },
   "partners": {
-    "title": "Colaboran con nosotros"
+    "title": "Collaborating with us"
   }
 }

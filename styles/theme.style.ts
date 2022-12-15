@@ -28,6 +28,8 @@ const CUSTOM_THEME = createTheme({
       styleOverrides: {
         root: {
           textTransform: "none",
+          fontWeight: "normal",
+          fontSize: "1rem",
         },
       },
     },

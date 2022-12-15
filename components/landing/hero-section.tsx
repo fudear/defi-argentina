@@ -22,11 +22,11 @@ const HeroSection: FunctionComponent<HeroSectionProps> = ({ id }) => {
         <Typography maxWidth="50ch">{t(`hero.description`)}</Typography>
 
         <Stack direction="row" gap={2} mt={4}>
-          <Button variant="outlined" href="#about">
+          <Button variant="outlined" href="#about" sx={{ py: 1 }}>
             {t(`hero.secondary`)}
           </Button>
 
-          <Button variant="contained" href="#donate">
+          <Button variant="contained" href="#donate" sx={{ py: 1 }}>
             {t(`hero.primary`)}
           </Button>
         </Stack>

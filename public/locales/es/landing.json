@@ -44,7 +44,9 @@
   },
   "donate": {
     "mini-header": "Es hora de donar",
-    "title": "Selecciona una de las opciones y seguí las instrucciones"
+    "title": "Selecciona una de las opciones y seguí las instrucciones",
+    "instruction": "Usa la dirección para donar desde tu wallet",
+    "copy": "Copiar"
   },
   "team": {
     "title": "Nuestro equipo",
