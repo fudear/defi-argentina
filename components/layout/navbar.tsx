@@ -1,31 +1,11 @@
-import {
-  AppBar,
-  Paper,
-  Stack,
-  Typography,
-  Toolbar,
-  styled,
-  IconButton,
-  Button,
-} from "@mui/material";
-import { FunctionComponent } from "react";
+import { AppBar, Button, Stack, Toolbar, Typography } from "@mui/material";
 import Image from "next/image";
-import { BLUE, GRAY } from "../../styles/color.style";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import { FunctionComponent } from "react";
 import useIsMobile from "../../hooks/useIsMobile";
+import { BLUE } from "../../styles/color.style";
+import Socials from "../common/socials";
 
 interface NavbarProps {}
-
-const Socials = () => {
-  return (
-    <Paper square elevation={0} sx={{ py: 1, px: 3, bgcolor: GRAY[200] }}>
-      <Stack direction="row" justifyContent="flex-end">
-        <Typography>SOCIALS</Typography>
-      </Stack>
-    </Paper>
-  );
-};
 
 const Navbar: FunctionComponent<NavbarProps> = () => {
   const isMobile = useIsMobile();
@@ -37,8 +17,6 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
       color="transparent"
       sx={{ bgcolor: BLUE[100] }}
     >
-      {/* <SocialsNavbar /> */}
-
       <Toolbar>
         <Stack flex="1" justifyContent="flex-start">
           <Image
@@ -55,15 +33,7 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
           flex="1"
           justifyContent={isMobile ? "flex-end" : "center"}
         >
-          <IconButton>
-            <TwitterIcon color="primary" />
-          </IconButton>
-          <IconButton>
-            <InstagramIcon color="primary" />
-          </IconButton>
-          <IconButton>
-            <TwitterIcon color="primary" />
-          </IconButton>
+          <Socials />
         </Stack>
 
         {!isMobile && (

@@ -5,6 +5,9 @@ import MiniHeader from "../common/mini-header";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import { BLUE } from "../../styles/color.style";
 import useIsMobile from "../../hooks/useIsMobile";
+import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
+import VerifiedUserOutlinedIcon from "@mui/icons-material/VerifiedUserOutlined";
+import PublicOutlinedIcon from "@mui/icons-material/PublicOutlined";
 
 interface AboutSectionProps {
   id: string;
@@ -21,17 +24,17 @@ const AboutSection: FunctionComponent<AboutSectionProps> = ({ id }) => {
       description: t(`about.item-1.description`),
     },
     {
-      icon: <FavoriteBorderOutlinedIcon color="primary" />,
+      icon: <FlagOutlinedIcon color="primary" />,
       title: t(`about.item-2.title`),
       description: t(`about.item-2.description`),
     },
     {
-      icon: <FavoriteBorderOutlinedIcon color="primary" />,
+      icon: <VerifiedUserOutlinedIcon color="primary" />,
       title: t(`about.item-3.title`),
       description: t(`about.item-3.description`),
     },
     {
-      icon: <FavoriteBorderOutlinedIcon color="primary" />,
+      icon: <PublicOutlinedIcon color="primary" />,
       title: t(`about.item-4.title`),
       description: t(`about.item-4.description`),
     },

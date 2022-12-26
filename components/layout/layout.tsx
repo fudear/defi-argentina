@@ -1,6 +1,7 @@
 import { Container, styled } from "@mui/material";
 import Head from "next/head";
 import { FunctionComponent } from "react";
+import Footer from "./footer";
 import Navbar from "./navbar";
 
 interface LayoutProps {
@@ -31,6 +32,8 @@ const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
       <Main>
         <Container>{children}</Container>
       </Main>
+
+      <Footer />
     </>
   );
 };
@@ -39,6 +42,4 @@ export default Layout;
 
 const Main = styled("main")`
   margin-top: 5rem;
-  height: 100vh;
-  max-height: 1080px;
 `;

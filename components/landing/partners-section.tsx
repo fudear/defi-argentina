@@ -13,22 +13,22 @@ const PartnersSection: FunctionComponent<PartnersSectionProps> = ({ id }) => {
   const partners = [
     {
       name: "DeFi Latam",
-      image: "defi-latam.png",
+      image: "defi-latam.svg",
       web: "https://twitter.com/DeFi_LATAM",
     },
     {
       name: "Calypso",
-      image: "calypso.png",
+      image: "calypso.svg",
       web: "https://twitter.com/CalypsoExchange",
     },
     {
       name: "Crypto Avisos",
-      image: "crypto-avisos.png",
+      image: "crypto-avisos.svg",
       web: "https://twitter.com/CryptoAvisos",
     },
     {
       name: "DeFi para principiantes",
-      image: "defi-pp.png",
+      image: "defi-pp.svg",
       web: "https://twitter.com/definovato",
     },
   ];
