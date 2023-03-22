@@ -44,10 +44,6 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
             justifyContent="flex-end"
             alignItems="center"
           >
-            <Typography>Campañas</Typography>
-            <Typography>Equipo</Typography>
-            <Typography>Contactar</Typography>
-
             <Button variant="contained" href="#donate">
               Doná hoy
             </Button>

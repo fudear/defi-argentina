@@ -9,22 +9,22 @@
   },
   "about": {
     "mini-header": "ABOUT FUDEAR",
-    "title": "Ayudamos a comedores infantiles de Argentina gracias a tus donaciones en cripto.",
+    "title": "We help children foodbanks in Argentina.",
     "item-1": {
-      "title": "Misión",
-      "description": "Misión description"
+      "title": "Mission",
+      "description": "To meet the needs of children and young people in Argentina and Latin America who are in a situation of socioeconomic vulnerability."
     },
     "item-2": {
-      "title": "Visión",
-      "description": "Visión description"
+      "title": "Vision",
+      "description": "To make decentralized finance a fast, easy, and transparent way to donate and help those who need it most."
     },
     "item-3": {
-      "title": "Transparencia",
-      "description": "Transparencia description"
+      "title": "Transparency",
+      "description": "Blockchain technology allows us to enable you to verify the traceability of your donations."
     },
     "item-4": {
-      "title": "Sin fronteras",
-      "description": "Sin fronteras description"
+      "title": "No borders",
+      "description": "Donate from anywhere in the world. Easy and in just a few seconds."
     }
   },
   "campaigns": {
