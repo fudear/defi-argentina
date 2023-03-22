@@ -12,10 +12,10 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
 
   return (
     <AppBar
-      elevation={0}
+      elevation={1}
       component="nav"
       color="transparent"
-      sx={{ bgcolor: BLUE[100] }}
+      sx={{ bgcolor: "white" }}
     >
       <Toolbar>
         <Stack flex="1" justifyContent="flex-start">
@@ -48,7 +48,9 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
             <Typography>Equipo</Typography>
             <Typography>Contactar</Typography>
 
-            <Button variant="contained">Doná hoy</Button>
+            <Button variant="contained" href="#donate">
+              Doná hoy
+            </Button>
           </Stack>
         )}
       </Toolbar>

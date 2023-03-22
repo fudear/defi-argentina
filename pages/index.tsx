@@ -13,7 +13,7 @@ export default function Home() {
     <Stack gap={16}>
       <HeroSection id="hero" />
       <AboutSection id="about" />
-      <CampaignsSection id="campaigns" />
+      {/* <CampaignsSection id="campaigns" /> */}
       <DonateSection id="donate" />
       <TeamSection id="team" />
       <PartnersSection id="partners" />

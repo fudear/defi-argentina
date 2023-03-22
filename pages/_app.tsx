@@ -1,14 +1,17 @@
 import { CssBaseline, responsiveFontSizes, ThemeProvider } from "@mui/material";
+import { appWithTranslation } from "next-i18next";
 import type { AppProps } from "next/app";
+import Background from "../components/layout/background";
 import Layout from "../components/layout/layout";
+import nextI18NextConfig from "../next-i18next.config.js";
 import GlobalStyles from "../styles/globals.style";
 import CUSTOM_THEME from "../styles/theme.style";
-import { appWithTranslation } from "next-i18next";
-import nextI18NextConfig from "../next-i18next.config.js";
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider theme={responsiveFontSizes(CUSTOM_THEME)}>
+      {/* <Background /> */}
+
       <CssBaseline />
 
       <GlobalStyles />

@@ -44,12 +44,12 @@ export const YELLOW = {
 };
 
 export const PURPLE = {
-  100: "##eaeafd",
-  200: "##cac9fa",
-  300: "##a6a7f7",
-  400: "##8083f5",
-  500: "##6365f1",
-  600: "##4746eb",
+  100: "#eaeafd",
+  200: "#cac9fa",
+  300: "#a6a7f7",
+  400: "#8083f5",
+  500: "#6365f1",
+  600: "#4746eb",
 };
 
 export const COLORS = {

@@ -2,6 +2,7 @@ import { Stack, Typography, Button } from "@mui/material";
 import { FunctionComponent } from "react";
 import { useTranslation } from "next-i18next";
 import MiniHeader from "../common/mini-header";
+import HighlightedText from "../common/highlighted-text";
 
 interface HeroSectionProps {
   id: string;
@@ -16,7 +17,9 @@ const HeroSection: FunctionComponent<HeroSectionProps> = ({ id }) => {
         <MiniHeader text={t(`hero.mini-header`)} />
 
         <Typography variant="h2" fontWeight="700" mb={3}>
-          {t(`hero.title`)}
+          <HighlightedText content={t(`hero.title-1`)} />
+          <br />
+          {t(`hero.title-2`)}
         </Typography>
 
         <Typography maxWidth="50ch">{t(`hero.description`)}</Typography>

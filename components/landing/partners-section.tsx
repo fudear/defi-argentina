@@ -17,6 +17,11 @@ const PartnersSection: FunctionComponent<PartnersSectionProps> = ({ id }) => {
       web: "https://twitter.com/DeFi_LATAM",
     },
     {
+      name: "NeoPower",
+      image: "neopower.png",
+      web: "https://twitter.com/NeoPowerDigital",
+    },
+    {
       name: "Calypso",
       image: "calypso.svg",
       web: "https://twitter.com/CalypsoExchange",
