@@ -7,11 +7,15 @@ const bodyFonts = {
 
 const CUSTOM_THEME = createTheme({
   palette: {
+    mode: "light",
     primary: {
       main: COLORS.MAIN,
     },
     secondary: {
       main: COLORS.SECONDARY,
+    },
+    background: {
+      default: "#FFFFFF",
     },
   },
   typography: {

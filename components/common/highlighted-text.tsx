@@ -13,7 +13,7 @@ export const HighlightedText: FunctionComponent<HighlightedTextProps> = ({
 export default HighlightedText;
 
 const Highlight = styled("span")`
-  background: linear-gradient(90deg, ${BLUE[400]}, ${BLUE[500]});
+  background: linear-gradient(90deg, ${BLUE[400]}, ${BLUE[300]});
   background-clip: text;
   color: transparent;
 `;

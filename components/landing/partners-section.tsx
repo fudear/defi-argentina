@@ -50,8 +50,8 @@ const PartnersSection: FunctionComponent<PartnersSectionProps> = ({ id }) => {
             <Button href={web} target="_blank">
               <Image
                 src={`/assets/images/partners/${image}`}
-                width={100}
-                height={100}
+                width={90}
+                height={90}
                 alt={name}
               />
             </Button>

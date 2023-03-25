@@ -12,7 +12,7 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
 
   return (
     <AppBar
-      elevation={1}
+      variant="outlined"
       component="nav"
       color="transparent"
       sx={{ bgcolor: "white" }}
@@ -20,7 +20,7 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
       <Toolbar>
         <Stack flex="1" justifyContent="flex-start">
           <Image
-            src="/assets/images/logo/logo.svg"
+            src="/assets/images/logo/logo.png"
             alt="logo defi argentina"
             width={235}
             height={40}

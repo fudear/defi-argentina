@@ -11,7 +11,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
     <StyledFooter>
       <Stack textAlign="center" gap={1}>
         <Image
-          src="/assets/images/logo/logo.svg"
+          src="/assets/images/logo/logo.png"
           alt="logo defi argentina"
           width={235}
           height={40}

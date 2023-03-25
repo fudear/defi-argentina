@@ -3,6 +3,7 @@ import { FunctionComponent } from "react";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LensIcon from "../../public/assets/icons/lens.svg";
+import { SOCIALS } from "../../models/socials";
 
 interface SocialsProps {}
 
@@ -12,12 +13,12 @@ const Socials: FunctionComponent<SocialsProps> = () => {
   const socials = [
     {
       name: "Twitter",
-      link: "https://twitter.com/DefiArgentina",
+      link: SOCIALS.TWITTER,
       icon: <TwitterIcon color={color} />,
     },
     {
       name: "Lens",
-      link: "https://www.lensfrens.xyz/defiargentina.lens",
+      link: SOCIALS.LENS,
       icon: (
         <SvgIcon color={color}>
           <LensIcon />
@@ -26,7 +27,7 @@ const Socials: FunctionComponent<SocialsProps> = () => {
     },
     {
       name: "Instagram",
-      link: "https://www.instagram.com/DefiArgentina/",
+      link: SOCIALS.INSTAGRAM,
       icon: <InstagramIcon color={color} />,
     },
   ];
