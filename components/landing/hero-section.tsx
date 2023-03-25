@@ -20,7 +20,7 @@ const HeroSection: FunctionComponent<HeroSectionProps> = ({ id }) => {
       id={id}
       direction={isMobile ? "column-reverse" : "row"}
       alignItems={isMobile ? "center" : "flex-start"}
-      py={isMobile ? 10 : 20}
+      py={isMobile ? 8 : 20}
       gap={isMobile ? 5 : 10}
     >
       <Stack
@@ -52,7 +52,12 @@ const HeroSection: FunctionComponent<HeroSectionProps> = ({ id }) => {
       <Lottie
         animationData={handCoin}
         loop
-        style={{ width: isMobile ? 200 : 400 }}
+        style={{
+          width: isMobile ? 200 : 400,
+          boxShadow: "0 8px 10px rgba(0,0,0,.1) inset",
+          borderRadius: 15,
+          padding: "2rem 0 2rem 2rem",
+        }}
       />
     </Stack>
   );
