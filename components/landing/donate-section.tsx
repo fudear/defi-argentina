@@ -80,7 +80,7 @@ const DonateSection: FunctionComponent<DonateSectionProps> = ({ id }) => {
         </Typography>
       </Stack>
 
-      <Card variant="outlined" elevation={1}>
+      <Card variant="outlined" elevation={0}>
         <Stack direction={isMobile ? "column" : "row"}>
           <WalletSelector
             selectedWallet={selectedWallet}

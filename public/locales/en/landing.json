@@ -1,6 +1,6 @@
 {
   "hero": {
-    "mini-header": "HELP US HELP",
+    "mini-header": "LET'S HELP TOGETHER",
     "title-1": "Donate with crypto.",
     "title-2": "Simple & transparent.",
     "description": "Thanks to your collaboration we can help many children.",
@@ -9,14 +9,18 @@
   },
   "about": {
     "mini-header": "ABOUT FUDEAR",
-    "title": "We help children foodbanks in Argentina.",
+    "title": "We help children foodbanks in Argentina."
+  },
+  "vision": {
+    "mini-header": "OUR VISION",
+    "title": "Make donating fast, simple, and transparent through Decentralized Finance (DeFi)",
     "item-1": {
-      "title": "Mission",
-      "description": "To meet the needs of children and young people in Argentina and Latin America who are in a situation of socioeconomic vulnerability."
+      "title": "Proactivity",
+      "description": "We organize donation campaigns offering benefits for participants and organizations."
     },
     "item-2": {
-      "title": "Vision",
-      "description": "To make decentralized finance a fast, easy, and transparent way to donate and help those who need it most."
+      "title": "Community",
+      "description": "We help communities to generate a positive social impact."
     },
     "item-3": {
       "title": "Transparency",

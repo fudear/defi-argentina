@@ -11,14 +11,20 @@ export const WALLETS: Wallet[] = [
     icon: "ethereum.svg",
     name: "Ethereum",
     chain: "ERC20",
-    address: "0xc600ccC02D08E432B812b01406f9E1F9aD142778",
+    address: "0x59ec567e868b06b132f6d31f117795822beaa147",
     domain: "defiargentina.eth",
   },
   {
     icon: "bnb-chain.svg",
     name: "BNB Chain",
     chain: "BEP20",
-    address: "0x449A1AC9c7AB3a14431d700D45040124D3269f1B",
+    address: "0x59ec567e868b06b132f6d31f117795822beaa147",
+  },
+  {
+    icon: "polygon.svg",
+    name: "Polygon",
+    chain: "MATIC",
+    address: "0x59ec567e868b06b132f6d31f117795822beaa147",
   },
   {
     icon: "tron.svg",
@@ -27,9 +33,15 @@ export const WALLETS: Wallet[] = [
     address: "TTzbrg6M4mXefWHR3muz6mzeKf1B6ugR57",
   },
   {
-    icon: "polygon.svg",
-    name: "Polygon",
-    chain: "MATIC",
-    address: "0x5B06bff581bA31Fc3560dbAEFe87C514bFFf65A7",
+    icon: "polkadot.svg",
+    name: "Polkadot",
+    chain: "Polkadot",
+    address: "0x59ec567e868b06b132f6d31f117795822beaa147",
+  },
+  {
+    icon: "tron.svg",
+    name: "Cosmos",
+    chain: "Cosmos",
+    address: "0x59ec567e868b06b132f6d31f117795822beaa147",
   },
 ];

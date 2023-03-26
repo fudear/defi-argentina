@@ -1,6 +1,6 @@
 {
   "hero": {
-    "mini-header": "AYUDANOS A AYUDAR",
+    "mini-header": "AYUDEMOS EN COMUNIDAD",
     "title-1": "Doná en cripto.",
     "title-2": "Fácil y transparente.",
     "description": "Gracias a tu colaboración podemos ayudar a que más chicos puedan comer dignamente y despierten su potencial.",
@@ -9,14 +9,18 @@
   },
   "about": {
     "mini-header": "¿QUÉ HACEMOS?",
-    "title": "Ayudamos a comedores infantiles de Argentina gracias a tus donaciones en cripto.",
+    "title": "Ayudamos a comedores infantiles de Argentina gracias a tus donaciones en cripto."
+  },
+  "vision": {
+    "mini-header": "NUESTRA VISIÓN",
+    "title": "Lograr que donar sea rápido, sencillo y transparente a través de las Finanzas Descentralizadas (DeFi)",
     "item-1": {
-      "title": "Misión",
-      "description": "Cubrir las necesidades de niños y jóvenes de Argentina y Latinoamérica que se encuentren en situación de vulnerabilidad socioeconómica."
+      "title": "Proactividad",
+      "description": "Organizamos campañas de donación ofreciendo beneficios para participantes y organizaciones."
     },
     "item-2": {
-      "title": "Visión",
-      "description": "Hacer de las finanzas descentralizadas una manera rápida, fácil y transparente para donar y ayudar a quienes más lo necesitan."
+      "title": "Comunidad",
+      "description": "Ayudamos a las comunidades a generar un impacto social positivo."
     },
     "item-3": {
       "title": "Transparencia",

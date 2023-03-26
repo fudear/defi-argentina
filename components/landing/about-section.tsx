@@ -8,6 +8,7 @@ import useIsMobile from "../../hooks/useIsMobile";
 import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 import VerifiedUserOutlinedIcon from "@mui/icons-material/VerifiedUserOutlined";
 import PublicOutlinedIcon from "@mui/icons-material/PublicOutlined";
+import Image from "next/image";
 
 interface AboutSectionProps {
   id: string;
@@ -16,29 +17,6 @@ interface AboutSectionProps {
 const AboutSection: FunctionComponent<AboutSectionProps> = ({ id }) => {
   const isMobile = useIsMobile();
   const { t } = useTranslation("landing");
-
-  const items = [
-    {
-      icon: <FavoriteBorderOutlinedIcon color="primary" />,
-      title: t(`about.item-1.title`),
-      description: t(`about.item-1.description`),
-    },
-    {
-      icon: <FlagOutlinedIcon color="primary" />,
-      title: t(`about.item-2.title`),
-      description: t(`about.item-2.description`),
-    },
-    {
-      icon: <VerifiedUserOutlinedIcon color="primary" />,
-      title: t(`about.item-3.title`),
-      description: t(`about.item-3.description`),
-    },
-    {
-      icon: <PublicOutlinedIcon color="primary" />,
-      title: t(`about.item-4.title`),
-      description: t(`about.item-4.description`),
-    },
-  ];
 
   return (
     <Stack id={id}>
@@ -50,21 +28,26 @@ const AboutSection: FunctionComponent<AboutSectionProps> = ({ id }) => {
         </Typography>
       </Stack>
 
-      <ItemsContainer sx={{ gap: isMobile ? "4rem" : "6rem" }}>
-        {items.map(({ icon, title, description }) => (
-          <Stack key={title} gap={2}>
-            <Avatar sx={{ width: "48px", height: "48px", bgcolor: BLUE[100] }}>
-              {icon}
-            </Avatar>
-
-            <Typography variant="h5" fontWeight="600">
-              {title}
-            </Typography>
-
-            <Typography color="text.secondary">{description}</Typography>
-          </Stack>
-        ))}
-      </ItemsContainer>
+      <Stack direction="row" gap={4} overflow="auto">
+        <Image
+          src="/assets/images/campaigns/campaign_1.png"
+          alt="campaign"
+          width={300}
+          height={300}
+        />
+        <Image
+          src="/assets/images/campaigns/campaign_2.png"
+          alt="campaign"
+          width={300}
+          height={300}
+        />
+        <Image
+          src="/assets/images/campaigns/campaign_3.png"
+          alt="campaign"
+          width={300}
+          height={300}
+        />
+      </Stack>
     </Stack>
   );
 };

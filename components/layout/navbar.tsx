@@ -13,6 +13,7 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
   return (
     <AppBar
       variant="outlined"
+      elevation={0}
       component="nav"
       color="transparent"
       sx={{ bgcolor: "white" }}

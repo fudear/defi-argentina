@@ -10,6 +10,7 @@ import TeamSection from "../components/landing/team-section";
 import { BLUE } from "../styles/color.style";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import { SOCIALS } from "../models/socials";
+import VisionSection from "../components/landing/vision-section";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <Stack gap={16}>
         <HeroSection id="hero" />
         <AboutSection id="about" />
-        {/* <CampaignsSection id="campaigns" /> */}
+        <VisionSection id="vision" />
         <BackgroundSection>
           <DonateSection id="donate" />
         </BackgroundSection>
