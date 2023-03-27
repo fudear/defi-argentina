@@ -6,6 +6,9 @@ import {
   ButtonGroup,
   Card,
   Chip,
+  FormControl,
+  MenuItem,
+  Select,
   Stack,
   Typography,
 } from "@mui/material";
@@ -29,12 +32,39 @@ const WalletSelector: FunctionComponent<any> = ({
 }) => {
   const isMobile = useIsMobile();
 
+  if (isMobile) {
+    return (
+      <FormControl fullWidth>
+        <Select
+          id="demo-simple-select"
+          value={
+            WALLETS.findIndex((w) => w.chain === selectedWallet.chain) || 0
+          }
+          onChange={({ target }) =>
+            setSelectedWallet(WALLETS[target.value as number])
+          }
+        >
+          {WALLETS.map(({ icon, name, chain }, index) => (
+            <MenuItem key={index} value={index}>
+              <Stack direction="row" gap={1}>
+                <Image
+                  src={`/assets/icons/${icon}`}
+                  alt=""
+                  width={20}
+                  height={20}
+                />
+
+                {`${name} (${chain})`}
+              </Stack>
+            </MenuItem>
+          ))}
+        </Select>
+      </FormControl>
+    );
+  }
+
   return (
-    <WalletGroup
-      size={isMobile ? "small" : "large"}
-      disableElevation
-      orientation="vertical"
-    >
+    <WalletGroup disableElevation orientation="vertical">
       {WALLETS.map(({ icon, name, chain }, index) => (
         <Button
           key={name}
@@ -47,7 +77,7 @@ const WalletSelector: FunctionComponent<any> = ({
               height={20}
             />
           }
-          sx={{ flex: 1 }}
+          sx={{ flex: 1, justifyContent: "flex-start" }}
           onClick={() => setSelectedWallet(WALLETS[index])}
         >
           {name} ({chain})

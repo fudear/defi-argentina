@@ -12,9 +12,9 @@ const PartnersSection: FunctionComponent<PartnersSectionProps> = ({ id }) => {
 
   const partners = [
     {
-      name: "DeFi Latam",
-      image: "defi-latam.svg",
-      web: "https://twitter.com/DeFi_LATAM",
+      name: "SEED Latam",
+      image: "seed-latam.png",
+      web: "https://twitter.com/SEEDLatam",
     },
     {
       name: "NeoPower",
@@ -23,7 +23,7 @@ const PartnersSection: FunctionComponent<PartnersSectionProps> = ({ id }) => {
     },
     {
       name: "Calypso",
-      image: "calypso.svg",
+      image: "calypso.png",
       web: "https://twitter.com/CalypsoExchange",
     },
     {
@@ -33,7 +33,7 @@ const PartnersSection: FunctionComponent<PartnersSectionProps> = ({ id }) => {
     },
     {
       name: "DeFi para principiantes",
-      image: "defi-pp.svg",
+      image: "defi-pp.png",
       web: "https://twitter.com/definovato",
     },
   ];
@@ -68,4 +68,13 @@ const ItemsContainer = styled("div")`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   gap: 3rem;
+
+  img {
+    filter: grayscale(100%);
+    transition: 200ms;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 `;

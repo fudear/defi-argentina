@@ -3,7 +3,7 @@
     "mini-header": "LET'S HELP TOGETHER",
     "title-1": "Donate with crypto.",
     "title-2": "Simple & transparent.",
-    "description": "Thanks to your collaboration we can help many children.",
+    "description": "Thanks to your collaboration we can help many children in need.",
     "primary": "Donate now",
     "secondary": "About us"
   },
@@ -55,9 +55,26 @@
   },
   "team": {
     "title": "Our team",
-    "description": "Thanks to them we can achieve our goals."
+    "description": "Our mission is made possible by the efforts of our leaders and all the volunteers involved."
   },
   "partners": {
     "title": "Collaborating with us"
+  },
+  "contact": {
+    "mini-header": "Let's do it",
+    "title": "You can help too",
+    "description": "Contact us to offer yourself as a volunteer, coordinate a partnership, or make any inquiries.",
+    "action-1": {
+      "title": "Volunteer",
+      "description": "Fill a quick form to offer as volunteer"
+    },
+    "action-2": {
+      "title": "Organization",
+      "description": "Contact us on behalf of your organization"
+    },
+    "action-3": {
+      "title": "Help",
+      "description": "Ask any question"
+    }
   }
 }

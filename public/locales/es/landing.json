@@ -55,9 +55,26 @@
   },
   "team": {
     "title": "Nuestro equipo",
-    "description": "Gracias al trabajo de todos ellos la Fundación puede cumplir sus objetivos."
+    "description": "Nuestra misión es posible gracias al trabajo de nuestros líderes y todos los voluntarios."
   },
   "partners": {
     "title": "Colaboran con nosotros"
+  },
+  "contact": {
+    "mini-header": "Manos a la obra",
+    "title": "Vos también podes ayudar",
+    "description": "Contactanos para ofrecerte como voluntario, coordinar un partnership o realizar cualquier consulta.",
+    "action-1": {
+      "title": "Voluntario",
+      "description": "Form para ofrecerte como voluntario"
+    },
+    "action-2": {
+      "title": "Organización",
+      "description": "Contactanos de parte de tu organización"
+    },
+    "action-3": {
+      "title": "Ayuda",
+      "description": "Realizá tu consulta"
+    }
   }
 }

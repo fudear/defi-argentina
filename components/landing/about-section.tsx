@@ -1,21 +1,14 @@
-import { Avatar, Box, Stack, styled, Typography } from "@mui/material";
-import { FunctionComponent } from "react";
+import { Stack, Typography } from "@mui/material";
 import { useTranslation } from "next-i18next";
-import MiniHeader from "../common/mini-header";
-import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import { BLUE } from "../../styles/color.style";
-import useIsMobile from "../../hooks/useIsMobile";
-import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
-import VerifiedUserOutlinedIcon from "@mui/icons-material/VerifiedUserOutlined";
-import PublicOutlinedIcon from "@mui/icons-material/PublicOutlined";
 import Image from "next/image";
+import { FunctionComponent } from "react";
+import MiniHeader from "../common/mini-header";
 
 interface AboutSectionProps {
   id: string;
 }
 
 const AboutSection: FunctionComponent<AboutSectionProps> = ({ id }) => {
-  const isMobile = useIsMobile();
   const { t } = useTranslation("landing");
 
   return (
@@ -53,8 +46,3 @@ const AboutSection: FunctionComponent<AboutSectionProps> = ({ id }) => {
 };
 
 export default AboutSection;
-
-const ItemsContainer = styled(Box)`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-`;

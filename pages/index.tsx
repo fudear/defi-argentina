@@ -1,16 +1,16 @@
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import { Box, Fab, Stack, styled } from "@mui/material";
 import { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import AboutSection from "../components/landing/about-section";
-import CampaignsSection from "../components/landing/campaigns-section";
+import ContactSection from "../components/landing/contact-section";
 import DonateSection from "../components/landing/donate-section";
 import HeroSection from "../components/landing/hero-section";
 import PartnersSection from "../components/landing/partners-section";
 import TeamSection from "../components/landing/team-section";
-import { BLUE } from "../styles/color.style";
-import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
-import { SOCIALS } from "../models/socials";
 import VisionSection from "../components/landing/vision-section";
+import { SOCIALS } from "../models/socials";
+import { BLUE } from "../styles/color.style";
 
 export default function Home() {
   return (
@@ -24,6 +24,8 @@ export default function Home() {
         </BackgroundSection>
         <TeamSection id="team" />
         <PartnersSection id="partners" />
+        <ContactSection id="contact" />
+
         <Box sx={{ height: 16 }} />
       </Stack>
 

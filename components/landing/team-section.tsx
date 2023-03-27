@@ -1,7 +1,7 @@
-import { Avatar, Button, Link, Stack, styled, Typography } from "@mui/material";
-import { FunctionComponent } from "react";
-import { useTranslation } from "next-i18next";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import { Avatar, Card, Link, Stack, styled, Typography } from "@mui/material";
+import { useTranslation } from "next-i18next";
+import { FunctionComponent } from "react";
 
 interface TeamSectionProps {
   id: string;
@@ -16,7 +16,7 @@ const TeamSection: FunctionComponent<TeamSectionProps> = ({ id }) => {
       name: "Noa",
       role: "Ops lead",
       twitter: "Noalatam",
-      link: "https://twitter.com/noalatam",
+      link: "https://twitter.com/SeedsPuntoEth",
     },
     {
       image: "pats.jpg",
@@ -44,7 +44,7 @@ const TeamSection: FunctionComponent<TeamSectionProps> = ({ id }) => {
   return (
     <Stack id={id} gap={4}>
       <Stack>
-        <Typography variant="h4" fontWeight="700" mb={2}>
+        <Typography variant="h4" fontWeight="700" mb={1}>
           {t(`team.title`)}
         </Typography>
 
@@ -53,28 +53,35 @@ const TeamSection: FunctionComponent<TeamSectionProps> = ({ id }) => {
 
       <ItemsContainer>
         {team.map(({ image, name, role, twitter, link }) => (
-          <Stack key={name}>
-            <Avatar
-              variant="rounded"
-              sx={{ width: 100, height: 100 }}
-              src={`/assets/images/team/${image}`}
-            />
+          <Card key={name} variant="outlined" elevation={0}>
+            <Stack justifyContent="center" alignItems="center" p={2}>
+              <Avatar
+                component={Link}
+                sx={{
+                  width: 100,
+                  height: 100,
+                }}
+                src={`/assets/images/team/${image}`}
+                href={link}
+                target="_blank"
+              />
 
-            <Typography variant="h5" mt={4} fontWeight="600">
-              {name}
-            </Typography>
-            <Typography color="text.secondary">{role}</Typography>
+              <Typography variant="h5" mt={4} fontWeight="600">
+                {name}
+              </Typography>
+              <Typography color="text.secondary">{role}</Typography>
 
-            <Link
-              underline="hover"
-              href={link}
-              target="_blank"
-              color="text.secondary"
-              sx={{ display: "flex", gap: 0.5 }}
-            >
-              <TwitterIcon />@{twitter}
-            </Link>
-          </Stack>
+              <Link
+                underline="hover"
+                href={link}
+                target="_blank"
+                color="text.secondary"
+                sx={{ display: "flex", gap: 0.5 }}
+              >
+                <TwitterIcon />@{twitter}
+              </Link>
+            </Stack>
+          </Card>
         ))}
       </ItemsContainer>
     </Stack>
@@ -87,4 +94,13 @@ const ItemsContainer = styled("div")`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   gap: 3rem;
+
+  .MuiAvatar-root {
+    transition: 200ms;
+
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
 `;
