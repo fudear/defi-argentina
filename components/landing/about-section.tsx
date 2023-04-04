@@ -26,7 +26,7 @@ function NextJsImage({
           height: "100%",
           boxSizing: "border-box",
           border: "1px solid black",
-          transition: "200ms",
+          transition: "200ms ease-in",
           filter: "grayscale(100%)",
           "&:hover": { filter: "grayscale(0%)" },
         }}

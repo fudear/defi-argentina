@@ -1,4 +1,9 @@
 {
   "title": "DeFi Argentina | Donate with crypto",
-  "description": "Simple & transparent"
+  "description": "Simple & transparent",
+  "menu": {
+    "about-us": "About us",
+    "donate": "Donate",
+    "contact": "Contact"
+  }
 }

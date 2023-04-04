@@ -11,11 +11,28 @@ import { FunctionComponent } from "react";
 import useIsMobile from "../../hooks/useIsMobile";
 import { BLUE } from "../../styles/color.style";
 import Socials from "../common/socials";
+import { useTranslation } from "next-i18next";
 
 interface NavbarProps {}
 
 const Navbar: FunctionComponent<NavbarProps> = () => {
+  const { t } = useTranslation("common");
   const isMobile = useIsMobile();
+
+  const menuItems = [
+    {
+      label: t(`menu.about-us`),
+      link: "#about",
+    },
+    {
+      label: t(`menu.donate`),
+      link: "#donate",
+    },
+    {
+      label: t(`menu.contact`),
+      link: "#contact",
+    },
+  ];
 
   return (
     <AppBar
@@ -54,15 +71,11 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
             justifyContent="flex-end"
             alignItems="center"
           >
-            <MenuItem component="a" href="#about">
-              Que hacemos
-            </MenuItem>
-            <MenuItem component="a" href="#donate">
-              Donar
-            </MenuItem>
-            <MenuItem component="a" href="#contact">
-              Contacto
-            </MenuItem>
+            {menuItems.map(({ link, label }, index) => (
+              <MenuItem key={index} component="a" href={link}>
+                {label}
+              </MenuItem>
+            ))}
           </Stack>
         )}
       </Toolbar>

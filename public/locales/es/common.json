@@ -1,4 +1,9 @@
 {
   "title": "DeFi Argentina | Donaciones",
-  "description": "Doná en crypto fácil y rápido"
+  "description": "Doná en crypto fácil y rápido",
+  "menu": {
+    "about-us": "Nosotros",
+    "donate": "Donar",
+    "contact": "Contacto"
+  }
 }
