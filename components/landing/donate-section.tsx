@@ -54,7 +54,7 @@ const WalletSelector: FunctionComponent<any> = ({
                   height={20}
                 />
 
-                {`${name} (${chain})`}
+                {name}
               </Stack>
             </MenuItem>
           ))}
@@ -77,10 +77,10 @@ const WalletSelector: FunctionComponent<any> = ({
               height={20}
             />
           }
-          sx={{ flex: 1, justifyContent: "flex-start" }}
+          sx={{ flex: 1, justifyContent: "flex-start", paddingRight: 10 }}
           onClick={() => setSelectedWallet(WALLETS[index])}
         >
-          {name} ({chain})
+          {name}
         </Button>
       ))}
     </WalletGroup>

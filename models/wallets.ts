@@ -23,7 +23,7 @@ export const WALLETS: Wallet[] = [
   {
     icon: "polygon.svg",
     name: "Polygon",
-    chain: "MATIC",
+    chain: "Polygon",
     address: "0x59ec567e868b06b132f6d31f117795822beaa147",
   },
   {
