@@ -25,12 +25,14 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-i18next": "^12.1.1",
+    "react-photo-album": "^2.0.3",
     "react-qr-code": "^2.0.11",
     "react-tsparticles": "^2.9.3",
     "react-use-clipboard": "^1.0.9",
     "tsparticles": "^2.9.3",
     "tsparticles-engine": "^2.9.3",
-    "typescript": "4.9.4"
+    "typescript": "4.9.4",
+    "yet-another-react-lightbox": "^3.3.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.5.1"

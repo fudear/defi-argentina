@@ -1,4 +1,11 @@
-import { AppBar, Button, Stack, Toolbar, Typography } from "@mui/material";
+import {
+  AppBar,
+  Button,
+  MenuItem,
+  Stack,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 import Image from "next/image";
 import { FunctionComponent } from "react";
 import useIsMobile from "../../hooks/useIsMobile";
@@ -29,25 +36,33 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
           />
         </Stack>
 
-        <Stack
-          direction="row"
-          flex="1"
-          justifyContent={isMobile ? "flex-end" : "center"}
-        >
-          <Socials />
-        </Stack>
+        {!isMobile && (
+          <Stack
+            direction="row"
+            flex="1"
+            justifyContent={isMobile ? "flex-end" : "center"}
+          >
+            <Socials />
+          </Stack>
+        )}
 
         {!isMobile && (
           <Stack
             direction="row"
-            gap={3}
+            gap={1}
             flex="1"
             justifyContent="flex-end"
             alignItems="center"
           >
-            <Button variant="contained" href="#donate">
-              Doná hoy
-            </Button>
+            <MenuItem component="a" href="#about">
+              Que hacemos
+            </MenuItem>
+            <MenuItem component="a" href="#donate">
+              Donar
+            </MenuItem>
+            <MenuItem component="a" href="#contact">
+              Contacto
+            </MenuItem>
           </Stack>
         )}
       </Toolbar>

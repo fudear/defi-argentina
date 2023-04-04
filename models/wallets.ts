@@ -27,6 +27,18 @@ export const WALLETS: Wallet[] = [
     address: "0x59ec567e868b06b132f6d31f117795822beaa147",
   },
   {
+    icon: "optimism.svg",
+    name: "Optimism",
+    chain: "Optimism",
+    address: "0x59ec567e868b06b132f6d31f117795822beaa147",
+  },
+  {
+    icon: "arbitrum.svg",
+    name: "Arbitrum",
+    chain: "Arbitrum",
+    address: "0x59ec567e868b06b132f6d31f117795822beaa147",
+  },
+  {
     icon: "tron.svg",
     name: "Tron",
     chain: "TRC20",
@@ -36,12 +48,12 @@ export const WALLETS: Wallet[] = [
     icon: "polkadot.svg",
     name: "Polkadot",
     chain: "Polkadot",
-    address: "0x59ec567e868b06b132f6d31f117795822beaa147",
+    address: "12T4ugwsqhQiUmmbkf4u6TbytaVayspqAqMzgrjaDU6sGgPX",
   },
   {
-    icon: "tron.svg",
+    icon: "cosmos.svg",
     name: "Cosmos",
     chain: "Cosmos",
-    address: "0x59ec567e868b06b132f6d31f117795822beaa147",
+    address: "cosmos17jlcjvaaexufrlsm3mnesljzhc57zlusfw7tdd",
   },
 ];
