@@ -19,13 +19,6 @@ const TeamSection: FunctionComponent<TeamSectionProps> = ({ id }) => {
       link: "https://twitter.com/SeedsPuntoEth",
     },
     {
-      image: "pats.jpg",
-      name: "Pats",
-      role: "Field lead",
-      twitter: "ValkPats",
-      link: "https://twitter.com/ValkPats",
-    },
-    {
       image: "milstein.png",
       name: "Milstein",
       role: "Growth lead",
