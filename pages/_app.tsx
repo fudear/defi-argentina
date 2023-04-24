@@ -1,7 +1,7 @@
 import { CssBaseline, responsiveFontSizes, ThemeProvider } from "@mui/material";
+import { Analytics } from '@vercel/analytics/react';
 import { appWithTranslation } from "next-i18next";
 import type { AppProps } from "next/app";
-import Background from "../components/layout/background";
 import Layout from "../components/layout/layout";
 import nextI18NextConfig from "../next-i18next.config.js";
 import GlobalStyles from "../styles/globals.style";
@@ -18,6 +18,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 
       <Layout>
         <Component {...pageProps} />
+        <Analytics  />
       </Layout>
     </ThemeProvider>
   );
