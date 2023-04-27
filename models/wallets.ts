@@ -12,7 +12,6 @@ export const WALLETS: Wallet[] = [
     name: "Ethereum",
     chain: "ERC20",
     address: "0x59ec567e868b06b132f6d31f117795822beaa147",
-    domain: "defiargentina.eth",
   },
   {
     icon: "bnb-chain.svg",
