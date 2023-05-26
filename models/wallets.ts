@@ -11,7 +11,7 @@ export const WALLETS: Wallet[] = [
     icon: "ethereum.svg",
     name: "Ethereum",
     chain: "ERC20",
-    address: "0x59ec567e868b06b132f6d31f117795822beaa147",
+    address: "0xe576d24c6AA0E6A2cb3f30A5C18A636bba54FfaE",
   },
   {
     icon: "bnb-chain.svg",
@@ -23,7 +23,7 @@ export const WALLETS: Wallet[] = [
     icon: "polygon.svg",
     name: "Polygon",
     chain: "Polygon",
-    address: "0x59ec567e868b06b132f6d31f117795822beaa147",
+    address: "0x5D039073fC3DD3d9c7Dbc9eC3409bA6957786Bf4",
   },
   {
     icon: "optimism.svg",
@@ -41,7 +41,7 @@ export const WALLETS: Wallet[] = [
     icon: "tron.svg",
     name: "Tron",
     chain: "TRC20",
-    address: "TTzbrg6M4mXefWHR3muz6mzeKf1B6ugR57",
+    address: "TFs5PpagP26xYdDRQyfFxH9WoV67MeYuHY",
   },
   {
     icon: "polkadot.svg",
