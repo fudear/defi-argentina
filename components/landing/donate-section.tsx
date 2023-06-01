@@ -129,7 +129,7 @@ const DonateSection: FunctionComponent<DonateSectionProps> = ({ id }) => {
               label={selectedWallet.domain || selectedWallet.chain}
             />
 
-            <Typography variant="body2" mt={1}>
+            <Typography variant="body2" mt={1} maxWidth="40ch" style={{wordWrap:"break-word"}}>
               {selectedWallet.address}
             </Typography>
 

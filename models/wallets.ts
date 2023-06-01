@@ -55,4 +55,16 @@ export const WALLETS: Wallet[] = [
     chain: "Cosmos",
     address: "cosmos17jlcjvaaexufrlsm3mnesljzhc57zlusfw7tdd",
   },
+  {
+    icon: "algorand.svg",
+    name: "Algorand",
+    chain: "Algorand",
+    address: "MEBNZFUAWF6YSZ7WHCR3CSIM623AYWKC4XS7O6BQRS5QL7QGFAOGKTTOQA",
+  },
+  {
+    icon: "osmosis.svg",
+    name: "Osmosis",
+    chain: "Osmosis",
+    address: "osmo17jlcjvaaexufrlsm3mnesljzhc57zlusp4dmml",
+  },  
 ];
