@@ -128,8 +128,7 @@ const DonateSection: FunctionComponent<DonateSectionProps> = ({ id }) => {
               color={selectedWallet.domain ? "primary" : "default"}
               label={selectedWallet.domain || selectedWallet.chain}
             />
-
-            <Typography variant="body2" mt={1} maxWidth="40ch" style={{wordWrap:"break-word"}}>
+            <Typography variant="body2" mt={1} maxWidth="40ch" noWrap>
               {selectedWallet.address}
             </Typography>
 
