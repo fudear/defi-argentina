@@ -12,11 +12,11 @@ const TeamSection: FunctionComponent<TeamSectionProps> = ({ id }) => {
 
   const team = [
     {
-      image: "noa.jpg",
-      name: "Noa",
+      image: "david.jpg",
+      name: "David",
       role: "Ops lead",
-      twitter: "Noalatam",
-      link: "https://twitter.com/SeedsPuntoEth",
+      twitter: "daviddrocco",
+      link: "https://twitter.com/daviddrocco",
     },
     {
       image: "milstein.png",
