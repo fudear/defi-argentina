@@ -129,7 +129,17 @@ const DonateSection: FunctionComponent<DonateSectionProps> = ({ id }) => {
               label={selectedWallet.domain || selectedWallet.chain}
             />
             <Typography variant="body2" mt={1} maxWidth="40ch" noWrap>
-              {selectedWallet.address}
+              {selectedWallet.isLink ? (
+                <a
+                  href={selectedWallet.address}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {selectedWallet.address}
+                </a>
+              ) : (
+                selectedWallet.address
+              )}
             </Typography>
 
             <Button
