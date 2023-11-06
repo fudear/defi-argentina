@@ -4,6 +4,7 @@ export interface Wallet {
   chain: string;
   address: string;
   domain?: string;
+  isLink?: boolean;
 }
 
 export const WALLETS: Wallet[] = [
@@ -11,8 +12,8 @@ export const WALLETS: Wallet[] = [
     icon: "bitcoin.svg",
     name: "Bitcoin",
     chain: "Bitcoin",
-    address: "bc1q9a6rsmk325zadss3dn7zcujt5gdp69c29tmetp3lq3tcj38dj47qgqn7sx"
-  },  
+    address: "bc1q9a6rsmk325zadss3dn7zcujt5gdp69c29tmetp3lq3tcj38dj47qgqn7sx",
+  },
   {
     icon: "ethereum.svg",
     name: "Ethereum",
@@ -72,11 +73,12 @@ export const WALLETS: Wallet[] = [
     name: "Osmosis",
     chain: "Osmosis",
     address: "osmo17jlcjvaaexufrlsm3mnesljzhc57zlusp4dmml",
-  },  
+  },
   {
     icon: "lightning-network.svg",
     name: "Lightning Network",
     chain: "Lightning Network",
-    address: "lnbc1pjjdftdpp59jhjeq6zcj2mj0q4n5gvxvpfzrzhfcxct04xjems6rzgtqwnyewqdqqcqzzgxqyz5vqrzjqwnvuc0u4txn35cafc7w94gxvq5p3cu9dd95f7hlrh0fvs46wpvhd3vz67pxv63jlqqqqqryqqqqthqqpyrzjqw8c7yfutqqy3kz8662fxutjvef7q2ujsxtt45csu0k688lkzu3ld3vz67pxv63jlqqqqqryqqqqthqqpysp5t9yehsug5fydxgwa27dqckf9qlsa39tjzxhvan9r4ysycdmxggys9qypqsqz9k4d8d04xq2cv3dr2ndysfra7dv6gzzvwl9hm9k8ptn0up5mkls7m752adccy6l5uavpf3acd59mzzyrj6um5hx3906cjxcxvz7s6gqayhmju"
-  }
+    address: "https://getalby.com/p/defiargentina",
+    isLink: true,
+  },
 ];
