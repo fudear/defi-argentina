@@ -81,4 +81,10 @@ export const WALLETS: Wallet[] = [
     address: "https://getalby.com/p/defiargentina",
     isLink: true,
   },
+  {
+    icon: "rootstock.svg",
+    name: "Rootstock",
+    chain: "Rootstock",
+    address: "0xbb65d4af985bee52e9e73902006cb59e89438bb7",
+  },
 ];
