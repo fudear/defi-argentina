@@ -32,6 +32,13 @@ const TeamSection: FunctionComponent<TeamSectionProps> = ({ id }) => {
       twitter: "briansasbon",
       link: "https://twitter.com/briansasbon",
     },
+    {
+      image: "monje.jpg",
+      name: "Gaston",
+      role: "Legal lead",
+      twitter: "GastonBielli",
+      link: "https://twitter.com/GastonBielli",
+    },
   ];
 
   return (
