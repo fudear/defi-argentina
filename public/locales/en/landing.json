@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "mini-header": "LET'S HELP TOGETHER",
+    "title-1": "Donate with crypto.",
+    "title-2": "Simple & transparent.",
+    "description": "Thanks to your collaboration we can help many children in need.",
+    "primary": "Donate now",
+    "secondary": "About us"
+  },
+  "about": {
+    "mini-header": "ABOUT US",
+    "title": "We help children foodbanks in Argentina."
+  },
+  "vision": {
+    "mini-header": "OUR VISION",
+    "title": "Make donating fast, simple, and transparent through Decentralized Finance (DeFi)",
+    "item-1": {
+      "title": "Proactivity",
+      "description": "We organize donation campaigns offering benefits for participants and organizations."
+    },
+    "item-2": {
+      "title": "Community",
+      "description": "We help communities to generate a positive social impact."
+    },
+    "item-3": {
+      "title": "Transparency",
+      "description": "Blockchain technology allows us to enable you to verify the traceability of your donations."
+    },
+    "item-4": {
+      "title": "No borders",
+      "description": "Donate from anywhere in the world. Easy and in just a few seconds."
+    }
+  },
+  "campaigns": {
+    "title": "Últimas campañas",
+    "description": "Gracias a tu ayuda podemos seguir cumpliendo nuestra misión.",
+    "item-1": {
+      "title": "Campaña 1",
+      "description": "Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque ornare pharetra faucibs arcu. Mauris blandit egestas nibh."
+    },
+    "item-2": {
+      "title": "Campaña 2",
+      "description": "Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque ornare pharetra faucibs arcu. Mauris blandit egestas nibh."
+    },
+    "item-3": {
+      "title": "Campaña 3",
+      "description": "Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque ornare pharetra faucibs arcu. Mauris blandit egestas nibh."
+    }
+  },
+  "donate": {
+    "mini-header": "Time to donate",
+    "title": "Select a chain and follow the instructions",
+    "instruction": "Use this address to donate from your wallet",
+    "copy": "Copy"
+  },
+  "team": {
+    "title": "Our team",
+    "description": "Our mission is made possible by the efforts of our leaders and all the volunteers involved."
+  },
+  "partners": {
+    "title": "Collaborating with us"
+  },
+  "contact": {
+    "mini-header": "Let's do it",
+    "title": "You can help too",
+    "description": "Contact us to offer yourself as a volunteer, coordinate a partnership, or make any inquiries.",
+    "action-1": {
+      "title": "Volunteer",
+      "description": "Fill a quick form to offer as volunteer"
+    },
+    "action-2": {
+      "title": "Organization",
+      "description": "Contact us on behalf of your organization"
+    },
+    "action-3": {
+      "title": "Help",
+      "description": "Ask any question"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "mini-header": "AYUDEMOS EN COMUNIDAD",
+    "title-1": "Doná en cripto.",
+    "title-2": "Fácil y transparente.",
+    "description": "Gracias a tu colaboración podemos ayudar a que más chicos puedan comer dignamente y despierten su potencial.",
+    "primary": "Doná hoy",
+    "secondary": "¿Qué hacemos?"
+  },
+  "about": {
+    "mini-header": "¿QUÉ HACEMOS?",
+    "title": "Ayudamos a comedores infantiles de Argentina gracias a tus donaciones en cripto."
+  },
+  "vision": {
+    "mini-header": "NUESTRA VISIÓN",
+    "title": "Lograr que donar sea rápido, sencillo y transparente a través de las Finanzas Descentralizadas (DeFi)",
+    "item-1": {
+      "title": "Proactividad",
+      "description": "Organizamos campañas de donación ofreciendo beneficios para participantes y organizaciones."
+    },
+    "item-2": {
+      "title": "Comunidad",
+      "description": "Ayudamos a las comunidades a generar un impacto social positivo."
+    },
+    "item-3": {
+      "title": "Transparencia",
+      "description": "La tecnología blockchain nos permite que puedas verificar la trazabilidad de tus donaciones."
+    },
+    "item-4": {
+      "title": "Sin fronteras",
+      "description": "Dona desde cualquier parte del mundo. Fácil y en pocos segundos."
+    }
+  },
+  "campaigns": {
+    "title": "Últimas campañas",
+    "description": "Gracias a tu ayuda podemos seguir cumpliendo nuestra misión.",
+    "item-1": {
+      "title": "Campaña 1",
+      "description": "Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque ornare pharetra faucibs arcu. Mauris blandit egestas nibh."
+    },
+    "item-2": {
+      "title": "Campaña 2",
+      "description": "Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque ornare pharetra faucibs arcu. Mauris blandit egestas nibh."
+    },
+    "item-3": {
+      "title": "Campaña 3",
+      "description": "Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque ornare pharetra faucibs arcu. Mauris blandit egestas nibh."
+    }
+  },
+  "donate": {
+    "mini-header": "Es hora de donar",
+    "title": "Selecciona una de las opciones y seguí las instrucciones",
+    "instruction": "Usa la dirección para donar desde tu wallet",
+    "copy": "Copiar"
+  },
+  "team": {
+    "title": "Nuestro equipo",
+    "description": "Nuestra misión es posible gracias al trabajo de nuestros líderes y todos los voluntarios."
+  },
+  "partners": {
+    "title": "Colaboran con nosotros"
+  },
+  "contact": {
+    "mini-header": "Manos a la obra",
+    "title": "Vos también podes ayudar",
+    "description": "Contactanos para ofrecerte como voluntario, coordinar un partnership o realizar cualquier consulta.",
+    "action-1": {
+      "title": "Voluntario",
+      "description": "Form para ofrecerte como voluntario"
+    },
+    "action-2": {
+      "title": "Organización",
+      "description": "Contactanos de parte de tu organización"
+    },
+    "action-3": {
+      "title": "Ayuda",
+      "description": "Realizá tu consulta"
+    }
+  }
+}
