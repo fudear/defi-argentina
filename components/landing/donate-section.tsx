@@ -1,5 +1,4 @@
-import CheckIcon from "@mui/icons-material/Check";
-import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+
 import {
   Box,
   Button,
@@ -21,6 +20,8 @@ import useClipboard from "react-use-clipboard";
 import useIsMobile from "../../hooks/useIsMobile";
 import { WALLETS } from "../../models/wallets";
 import MiniHeader from "../common/mini-header";
+import SolanaWalletConnect from "./solana-wallet-connect";
+import BasicTabs from "./tab-selector";
 
 interface DonateSectionProps {
   id: string;
@@ -118,43 +119,15 @@ const DonateSection: FunctionComponent<DonateSectionProps> = ({ id }) => {
           />
 
           <Widget p={3} alignItems="center" justifyContent="center">
-            <Typography>{t("donate.instruction")}</Typography>
-
-            <Box my={5}>
-              <QRCode size={128} value={selectedWallet.address} />
-            </Box>
-
-            <Chip
-              color={selectedWallet.domain ? "primary" : "default"}
-              label={selectedWallet.domain || selectedWallet.chain}
-            />
-            <Typography variant="body2" mt={1} maxWidth="40ch" noWrap>
-              {selectedWallet.isLink ? (
-                <a
-                  href={selectedWallet.address}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {selectedWallet.address}
-                </a>
-              ) : (
-                selectedWallet.address
-              )}
-            </Typography>
-
-            <Button
-              startIcon={isCopied ? <CheckIcon /> : <ContentCopyIcon />}
-              size="small"
-              onClick={setCopied}
-            >
-              {t("donate.copy")}
-            </Button>
+            <BasicTabs selectedWallet={selectedWallet} isCopied={isCopied} setCopied={setCopied} />
           </Widget>
         </Stack>
       </Card>
     </Stack>
   );
 };
+
+
 
 export default DonateSection;
 
