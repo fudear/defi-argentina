@@ -1,0 +1,76 @@
+import { useCallback, useEffect, useRef, useState } from 'react'
+import { useConnection, useWallet } from '@solana/wallet-adapter-react';
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
+import { Box, Button, CircularProgress, Input, Typography } from '@mui/material';
+import { Keypair, SystemProgram, Transaction } from '@solana/web3.js';
+
+const SolanaWalletConnect = () => {
+  const [amount, setAmount] = useState<string>('')
+  const [isLoading, setIsLoading] = useState<boolean>(false)
+  const [txFinished, setTxFinished] = useState<boolean>(false)
+  const { publicKey, sendTransaction } = useWallet();
+  const { connection } = useConnection()
+
+  const handleClick = useCallback(async () => {
+    if (!publicKey) return;
+
+    setIsLoading(true)
+    try {
+      const lamports = await connection.getMinimumBalanceForRentExemption(0);
+
+      const transaction = new Transaction().add(
+        SystemProgram.transfer({
+          fromPubkey: publicKey,
+          toPubkey: Keypair.generate().publicKey,
+          lamports,
+        })
+      );
+
+      const {
+        context: { slot: minContextSlot },
+        value: { blockhash, lastValidBlockHeight }
+      } = await connection.getLatestBlockhashAndContext();
+
+      const signature = await sendTransaction(transaction, connection, { minContextSlot });
+
+      const result = await connection.confirmTransaction({ blockhash, lastValidBlockHeight, signature });
+      console.log(result)
+      setTxFinished(true)
+    } catch (err) {
+      console.error(err)
+    } finally {
+      setIsLoading(false)
+    }
+
+  }, [publicKey, sendTransaction, connection])
+
+  return (
+    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4, paddingTop: '32px' }}>
+      {!publicKey && <Typography variant='body1'>Conectarse con la wallet para continuar </Typography>}
+      <WalletMultiButton />
+      {isLoading && <CircularProgress />}
+      {
+        !isLoading && publicKey && !txFinished
+          ?
+          (
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+              <Typography variant='body1'>Monto a donar de manera recurrente</Typography>
+              <Input type="text" onChange={(e) => setAmount(e.target.value)} />
+              <Button variant='contained' onClick={handleClick} disabled={!publicKey}>Confirmar</Button>
+            </Box>
+          )
+          : null
+      }
+
+      {
+        txFinished &&
+        <Box color={'green'} sx={{ background: '#77ee22', color: 'white', borderRadius: '10px', p: 1 }}>
+          Donacion recurrente realizada con éxito
+        </Box>
+
+      }
+    </Box>
+  )
+}
+
+export default SolanaWalletConnect;

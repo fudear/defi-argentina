@@ -9,6 +9,12 @@ export interface Wallet {
 
 export const WALLETS: Wallet[] = [
   {
+    icon: "solana.svg",
+    name: "Solana",
+    chain: "Solana",
+    address: "6N5TU8HhDTwCuJUPNaFzbgEvDkAXx2ZLuR2j1KG5VECw",
+  },
+  {
     icon: "bitcoin.svg",
     name: "Bitcoin",
     chain: "Bitcoin",
