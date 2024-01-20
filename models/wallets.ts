@@ -12,7 +12,7 @@ export const WALLETS: Wallet[] = [
     icon: "solana.svg",
     name: "Solana",
     chain: "Solana",
-    address: "6N5TU8HhDTwCuJUPNaFzbgEvDkAXx2ZLuR2j1KG5VECw",
+    address: "Czg6VvevGUWgeEiwLZE8cnQdV8u4cuvAgJw9TcQ5HZ3g",
   },
   {
     icon: "bitcoin.svg",

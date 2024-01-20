@@ -3,6 +3,7 @@ import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 import { Box, Button, CircularProgress, Input, Typography } from '@mui/material';
 import { Keypair, SystemProgram, Transaction } from '@solana/web3.js';
+import useSchedulingPayments from '../../hooks/useSchedulingPayments';
 
 const SolanaWalletConnect = () => {
   const [amount, setAmount] = useState<string>('')
@@ -11,30 +12,15 @@ const SolanaWalletConnect = () => {
   const { publicKey, sendTransaction } = useWallet();
   const { connection } = useConnection()
 
+  const { schedulePayment } = useSchedulingPayments()
+
+
   const handleClick = useCallback(async () => {
     if (!publicKey) return;
 
     setIsLoading(true)
     try {
-      const lamports = await connection.getMinimumBalanceForRentExemption(0);
-
-      const transaction = new Transaction().add(
-        SystemProgram.transfer({
-          fromPubkey: publicKey,
-          toPubkey: Keypair.generate().publicKey,
-          lamports,
-        })
-      );
-
-      const {
-        context: { slot: minContextSlot },
-        value: { blockhash, lastValidBlockHeight }
-      } = await connection.getLatestBlockhashAndContext();
-
-      const signature = await sendTransaction(transaction, connection, { minContextSlot });
-
-      const result = await connection.confirmTransaction({ blockhash, lastValidBlockHeight, signature });
-      console.log(result)
+      await schedulePayment()
       setTxFinished(true)
     } catch (err) {
       console.error(err)

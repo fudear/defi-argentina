@@ -18,7 +18,6 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ConnectionProvider endpoint={ENDPOINT}>
       <WalletProvider wallets={[]} >
-
         <WalletModalProvider>
           <ThemeProvider theme={responsiveFontSizes(CUSTOM_THEME)}>
 
